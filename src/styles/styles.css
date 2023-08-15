@@ -1,8 +1,21 @@
 @import "./colors.css";
+@import "./modes.css";
+@import "./papers.css";
 
-.gray-paper {
-  width: 100%;
-  height: 200px;
+.main {
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
-  background-color: var(--gray-paper);
+.dashboard {
+  padding-inline: 12rem;
+  padding-top: 2rem;
+}
+
+.header {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
 }

@@ -11,12 +11,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Social Media Dashboard</title>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <script type="module" src="index.mjs" defer></script>
+    <script type="module" src="./js/index.mjs" defer></script>
   </head>
   <body>
     <div class="main">
-      <div class="gray-paper"></div>
-      <div class="dashboard"></div>
+      <div class="papers">
+        <div class="top-paper"></div>
+        <div class="buttom-paper"></div>
+      </div>
+
+      <div class="dashboard">
+        <div class="header">
+          <div class="dash-head">
+            <h1 class="main-title">Social Media Dashboard</h1>
+            <h5 class="total-followers">Total Followers:&nbsp;</h5>
+          </div>
+          <div class="modes">
+            <p class="mode-text">Dark Mode</p>
+            <div class="mode-icons">
+              <div class="right-circulate circulate"></div>
+              <div class="left-circulate circulate"></div>
+              <img
+                class="mode-icon light-mode"
+                src="./assets/day-mode.png"
+                alt="day mode icon"
+              />
+              <img
+                class="mode-icon dark-mode"
+                src="./assets/dark-mode.png"
+                alt="dark mode icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

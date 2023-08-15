@@ -8,6 +8,7 @@ class Data {
 
   getData() {
     return {
+      total_followers: 23004,
       social: [
         {
           icon: this.icons.facebook,
