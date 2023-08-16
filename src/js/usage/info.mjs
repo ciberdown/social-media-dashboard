@@ -5,7 +5,7 @@ class Data {
     twitter: "icon-twitter.svg",
     youtube: "icon-youtube.svg",
   };
-
+  
   getData() {
     return {
       total_followers: 23004,
@@ -16,6 +16,7 @@ class Data {
           followers: 1987,
           unit: "followers",
           today: 12,
+          platform: 'facebook'
         },
         {
           icon: this.icons.twitter,
@@ -23,6 +24,7 @@ class Data {
           followers: 1044,
           unit: "followers",
           today: 99,
+          platform: 'twitter'
         },
         {
           icon: this.icons.instagram,
@@ -30,13 +32,15 @@ class Data {
           followers: "11K",
           unit: "followers",
           today: 1099,
+          platform: 'instagram'
         },
         {
           icon: this.icons.youtube,
           social_id: "Nathan F.",
           followers: 8239,
           unit: "subscribers",
-          today: 144,
+          today: -144,
+          platform: 'youtube'
         },
       ],
       today_overview: [
