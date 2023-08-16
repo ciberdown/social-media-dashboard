@@ -1,0 +1,95 @@
+.modes {
+  min-width: 210px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mode-icons {
+  background-color: #aaaaaa;
+  padding: 2px;
+  padding-inline: 6px;
+  border-radius: 30%;
+  position: relative;
+}
+
+.mode-text {
+  color: white;
+}
+
+.mode-icon {
+  cursor: default;
+  width: 30px;
+  height: 30px;
+}
+
+.mode-icon:hover {
+  /* scale: 1.2;
+    transition: scale .2s; */
+}
+
+.circulate {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  z-index: -1;
+  background-color: #aaaaaa;
+  top: 1px;
+}
+
+.right-circulate {
+  right: -3px;
+}
+
+.left-circulate {
+  left: -3px;
+}
+
+.animate-rotate {
+  animation: rotateIcon 0.5s linear forwards alternate;
+  cursor: pointer;
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.2;
+  }
+}
+.papers {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.top-paper {
+  width: 100%;
+  height: 250px;
+  background-color: #6c757d;
+}
+
+.buttom-paper {
+  background-color: white;
+}
+
+.main {
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.dashboard {
+  padding-inline: 12rem;
+  padding-top: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

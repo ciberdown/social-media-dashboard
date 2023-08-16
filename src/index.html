@@ -10,7 +10,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Social Media Dashboard</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./dist/css/index.css" />
     <script type="module" src="./js/index.mjs" defer></script>
   </head>
   <body>
@@ -32,11 +32,13 @@
               <div class="right-circulate circulate"></div>
               <div class="left-circulate circulate"></div>
               <img
-                class="mode-icon light-mode"
+                id="light-mode"
+                class="mode-icon light-mode animate-rotate"
                 src="./assets/day-mode.png"
                 alt="day mode icon"
               />
               <img
+                id="dark-mode"
                 class="mode-icon dark-mode"
                 src="./assets/dark-mode.png"
                 alt="dark mode icon"

@@ -1,0 +1,68 @@
+@import "./colors.scss";
+
+$height: 35px;
+
+.modes {
+  min-width: 210px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.mode-icons {
+  background-color: $mode-icons-background;
+  padding: 2px;
+  padding-inline: 6px;
+  border-radius: 30%;
+  position: relative;
+}
+.mode-text {
+  color: $mode-text-color;
+}
+.mode-icon {
+  cursor: default;
+  width: 30px;
+  height: 30px;
+}
+.mode-icon:hover {
+  /* scale: 1.2;
+    transition: scale .2s; */
+}
+
+.dark-mode {
+}
+
+.light-mode {
+}
+
+.circulate {
+  border-radius: 50%;
+  height: $height;
+  width: $height;
+  position: absolute;
+  z-index: -1;
+  background-color: $mode-icons-background;
+  top: 1px;
+}
+.right-circulate {
+  right: -3px;
+}
+
+.left-circulate {
+  left: -3px;
+}
+
+.animate-rotate {
+  animation: rotateIcon 0.5s linear forwards alternate;
+  cursor: pointer;
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.2;
+  }
+}
