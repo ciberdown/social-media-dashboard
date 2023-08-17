@@ -1,3 +1,27 @@
+.primary {
+  color: #696a6a;
+}
+
+.profit {
+  color: #4cbca1;
+}
+
+.loss {
+  color: #c23e4e;
+}
+
+.primary {
+  color: #696a6a;
+}
+
+.profit {
+  color: #4cbca1;
+}
+
+.loss {
+  color: #c23e4e;
+}
+
 .modes {
   min-width: 210px;
   display: flex;
@@ -6,7 +30,7 @@
 }
 
 .mode-icons {
-  background-color: #aaaaaa;
+  background-color: white;
   padding: 2px;
   padding-inline: 6px;
   border-radius: 30%;
@@ -14,13 +38,13 @@
 }
 
 .mode-text {
-  color: white;
+  color: #696a6a;
 }
 
 .mode-icon {
   cursor: default;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .mode-icon:hover {
@@ -30,11 +54,11 @@
 
 .circulate {
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
   position: absolute;
   z-index: -1;
-  background-color: #aaaaaa;
+  background-color: white;
   top: 1px;
 }
 
@@ -70,8 +94,8 @@
 
 .top-paper {
   width: 100%;
-  height: 250px;
-  background-color: #6c757d;
+  height: 220px;
+  background-color: #f9f9f9;
 }
 
 .buttom-paper {
@@ -89,30 +113,144 @@
 }
 
 .social-media-dashboard {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-top: 50px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  height: 90vh;
   width: 100%;
+  height: 180px;
+}
+
+.main-title {
+  font-size: 24px;
 }
 
 .single-card-socialmedia {
+  gap: 1.2rem;
+  background-color: #f5f5fb;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.single-card-socialmedia:hover {
+  background-color: #ededf3;
+}
+
+.facebook-gradiant {
+  background-image: linear-gradient(to right, #1654a2, #0f64cd);
+}
+
+.twitter-gradiant {
+  background-image: linear-gradient(to right, #1654a2, #0f64cd);
+}
+
+.insta-gradiant {
+  background-image: linear-gradient(to right, #f42626, #e35151);
+}
+
+.youtube-gradiant {
+  background-image: linear-gradient(to right, #d50505, #e20000);
 }
 
 .gradiant-sec {
   width: 100%;
-  height: 2px;
+  height: 4px;
 }
 
 .social-header {
   display: flex;
+  gap: 10px;
+  font-size: 0.8rem;
+}
+
+.followers-count {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.followers-unit {
+  margin-top: -8px;
+  font-size: 0.8rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 4px;
+  font-weight: lighter;
 }
 
 .overview-today {
   display: flex;
+}
+
+.total-followers {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.social-footer {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.overview-today-title {
+  margin-top: 30px;
+  color: #696a6a;
+  font-size: 24px;
+}
+
+.overview-today {
+  margin-top: 50px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  height: 90vh;
+  width: 100%;
+  height: 230px;
+}
+
+.single-card-overview {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  row-gap: 15px;
+  background-color: #f5f5fb;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px;
+  cursor: pointer;
+}
+.single-card-overview:hover {
+  background-color: #ededf3;
+}
+
+.overview-title {
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.overview-image {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.overview-num {
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+
+.overview-percentage-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
 }
 
 .main {
@@ -123,10 +261,15 @@
 .dashboard {
   padding-inline: 12rem;
   padding-top: 2rem;
+  min-width: 900px;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.touppercase {
+  text-transform: uppercase;
 }

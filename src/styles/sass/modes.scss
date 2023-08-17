@@ -1,6 +1,6 @@
 @import "./colors.scss";
 
-$height: 35px;
+$height: 25px;
 
 .modes {
   min-width: 210px;
@@ -20,8 +20,8 @@ $height: 35px;
 }
 .mode-icon {
   cursor: default;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 .mode-icon:hover {
   /* scale: 1.2;

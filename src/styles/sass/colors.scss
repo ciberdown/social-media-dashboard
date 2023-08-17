@@ -1,9 +1,25 @@
-$primary-color: #007bff;
-$secondary-color: #6c757d;
-$text-color: #333;
+$text-color: #696a6a;
+$folowers-text-color: rgb(165, 165, 165);
 
-$mode-text-color: white;
-$mode-icons-background: #aaaaaa;
+$profit-color: #4cbca1;
+$loss-color: #c23e4e;
 
-$top-paper: #6c757d;
+$mode-text-color: $text-color;
+$mode-icons-background: white;
+
+$top-paper: #f9f9f9;
 $buttom-paper: white;
+
+$card-background-color: #f5f5fb;
+$card-background-color-hover: #ededf3;
+
+.primary{
+    color: $text-color;
+}
+
+.profit {
+  color: $profit-color;
+}
+.loss {
+  color: $loss-color;
+}

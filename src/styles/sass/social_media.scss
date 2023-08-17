@@ -1,0 +1,92 @@
+@import "./grid-system.scss";
+
+.hidden {
+  display: none;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media-dashboard {
+  @include default-card;
+  height: 180px;
+}
+.main-title {
+  font-size: 24px;
+}
+.single-card-socialmedia {
+  gap: 1.2rem;
+  background-color: $card-background-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover {
+    background-color: $card-background-color-hover;
+  }
+}
+.facebook-gradiant {
+  background-image: linear-gradient(to right, #1654a2, #0f64cd);
+}
+.twitter-gradiant {
+  background-image: linear-gradient(to right, #1654a2, #0f64cd);
+}
+.insta-gradiant {
+  background-image: linear-gradient(to right, #f42626, #e35151);
+}
+.youtube-gradiant {
+  background-image: linear-gradient(to right, #d50505, #e20000);
+}
+.gradiant-sec {
+  width: 100%;
+  height: 4px;
+}
+.social-header {
+  display: flex;
+  gap: 10px;
+  font-size: 0.8rem;
+}
+.social-id {
+}
+
+.social-image {
+}
+
+.followers-count {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.followers-unit {
+  margin-top: -8px;
+  font-size: 0.8rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 4px;
+  font-weight: lighter;
+}
+.social-footer {
+}
+.today {
+}
+.profit-img {
+}
+
+.overview-today {
+  display: flex;
+}
+
+.single-card-overview {
+}
+
+.total-followers {
+  margin-top: 5px;
+  font-size: 12px;
+}
+.social-footer {
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

@@ -1,7 +1,9 @@
 @import "./colors.scss";
 @import "./modes.scss";
 @import "./papers.scss";
-@import "./cards.scss";
+@import "./social_media.scss";
+@import "./overview.scss";
+@import './grid-system.scss';
 
 .main {
   position: relative;
@@ -12,6 +14,7 @@
 .dashboard {
   padding-inline: 12rem;
   padding-top: 2rem;
+  min-width: 900px;
 }
 
 .header {
@@ -19,4 +22,7 @@
 
   justify-content: space-between;
   align-items: center;
+}
+.touppercase{
+  text-transform: uppercase;
 }

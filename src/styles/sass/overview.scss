@@ -1,0 +1,46 @@
+.overview-today-title {
+  margin-top: 30px;
+  color: $text-color;
+  font-size: 24px;
+}
+
+.overview-today {
+  @include default-card;
+  height: 230px;
+}
+
+.single-card-overview {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  row-gap: 15px;
+  background-color: $card-background-color;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px;
+  cursor: pointer;
+  &:hover {
+    background-color: $card-background-color-hover;
+  }
+}
+.overview-title {
+  font-size: 12px;
+  font-weight: bolder;
+}
+.overview-image {
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+}
+.overview-num {
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+.overview-percentage-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+}
