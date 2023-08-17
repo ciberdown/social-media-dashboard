@@ -1,0 +1,70 @@
+.dashboard {
+  padding-inline: 12rem;
+  padding-top: 2rem;
+}
+@media (max-width: 1280px) {
+  .dashboard {
+    padding-inline: 10rem;
+  }
+  .social-media-dashboard {
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+  }
+  .single-card-socialmedia {
+    width: auto;
+  }
+  .overview-today {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 1000px) {
+  .dashboard {
+    padding-inline: 10rem;
+  }
+  .social-media-dashboard {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .overview-today {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 850px) {
+  .dashboard {
+    padding-inline: 6rem;
+  }
+}
+@media (max-width: 700px) {
+  .dashboard {
+    padding-inline: 3rem;
+  }
+
+  .social-media-dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-today {
+    grid-template-columns: 1fr;
+    width: auto;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+    width: 100%;
+  }
+  .modes {
+    width: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .line{
+    display: inline;
+    width: 100%;
+    color: black;
+    background-color: $text-color;
+    height: 1px;
+  }
+}

@@ -1,12 +1,15 @@
 .overview-today-title {
   margin-top: 30px;
   color: $text-color;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .overview-today {
-  @include default-card;
-  height: 230px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  height: 100px;
+  margin-top: 10px;
 }
 
 .single-card-overview {
@@ -44,3 +47,4 @@
   font-size: 10px;
   font-weight: bold;
 }
+

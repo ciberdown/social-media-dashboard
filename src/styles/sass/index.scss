@@ -3,7 +3,8 @@
 @import "./papers.scss";
 @import "./social_media.scss";
 @import "./overview.scss";
-@import './grid-system.scss';
+@import "./grid-system.scss";
+
 
 .main {
   position: relative;
@@ -11,11 +12,8 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.dashboard {
-  padding-inline: 12rem;
-  padding-top: 2rem;
-  min-width: 900px;
-}
+
+
 
 .header {
   display: flex;
@@ -23,6 +21,9 @@
   justify-content: space-between;
   align-items: center;
 }
-.touppercase{
+.touppercase {
   text-transform: uppercase;
 }
+
+
+@import "./mediaQueries.scss";
