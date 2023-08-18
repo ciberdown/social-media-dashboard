@@ -11,7 +11,10 @@
   background-color: $top-paper;
 }
 
-.buttom-paper {
-  background-color: $buttom-paper;
+.bottom-paper {
+  position: absolute;
+  width: 100%;
+  top: 220px;
+  bottom: 0;
+  background-color: $bottom-paper;
 }
-

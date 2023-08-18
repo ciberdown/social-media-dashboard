@@ -1,5 +1,11 @@
 class Modes {
   constructor() {
+    this.darkColors = {
+      top_paper_dark: "#00042B",
+      bottom_paper_dark: "#000435",
+      card_background: "#00053D",
+      card_background_hover: "white",
+    };
     this._currentMode = this.getSystemMode();
   }
   toggleMode() {
@@ -14,13 +20,18 @@ class Modes {
   setMode(mode) {
     const dark_element = document.getElementById("dark-mode");
     const light_element = document.getElementById("light-mode");
+    const mode_text = document.querySelector(".mode-text");
 
-    if (mode === "light") {
+    if (mode === "dark") {
       dark_element.classList.remove("animate-rotate");
       light_element.classList.add("animate-rotate");
+      mode_text.innerHTML = "Dark Mode";
+      this.setDarkClasses();
     } else {
       dark_element.classList.add("animate-rotate");
       light_element.classList.remove("animate-rotate");
+      mode_text.innerHTML = "Light Mode";
+      this.removeDarkClasses();
     }
   }
 
@@ -38,6 +49,27 @@ class Modes {
       return "light";
     }
   }
+  setDarkClasses() {
+    document.querySelector(".top-paper").style.backgroundColor =
+      this.darkColors.top_paper_dark;
+    document.querySelector(".bottom-paper").style.backgroundColor =
+      this.darkColors.bottom_paper_dark;
+    document.querySelector(".main-title").style.color = "white";
+
+    const elements = document.querySelectorAll(".single-card-socialmedia");
+    elements.forEach((element) => {
+      element.style.backgroundColor = this.darkColors.card_background;
+    });
+  }
+  removeDarkClasses() {
+    document.querySelector(".top-paper").style = "";
+    document.querySelector(".bottom-paper").style = "";
+    document.querySelector(".main-title").style.color = "";
+    const elements = document.querySelectorAll(".single-card-socialmedia");
+    elements.forEach((element) => {
+      element.style.backgroundColor = "";
+    });
+  }
 }
 class ClickModesHandle {
   constructor(mode) {
@@ -49,10 +81,10 @@ class ClickModesHandle {
   }
 
   clickLightBtn() {
-    mode.setMode("dark");
+    mode.setMode("light");
   }
   clickDarkBtn() {
-    mode.setMode("light");
+    mode.setMode("dark");
   }
 }
 export const mode = new Modes();

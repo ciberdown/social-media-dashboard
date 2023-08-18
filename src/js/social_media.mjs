@@ -9,6 +9,7 @@ class SocialCard {
   }
   createCard({ icon, social_id, followers, unit, today, platform }) {
     const mainElement = this.elements.create("div", "single-card-socialmedia");
+    mainElement.id = "single-card-socialmedia";
 
     const gradiant_sec = this.elements.create("section", "gradiant-sec");
     gradiant_sec.style.backgroundImage = this.getGradiant(platform);
@@ -35,7 +36,11 @@ class SocialCard {
     );
     mainElement.appendChild(followersElement);
 
-    const units = this.elements.create("p", "followers-unit touppercase primary", unit);
+    const units = this.elements.create(
+      "p",
+      "followers-unit touppercase primary",
+      unit
+    );
     mainElement.appendChild(units);
 
     const social_footer = this.elements.create(
@@ -43,7 +48,7 @@ class SocialCard {
       "social-footer flex-center"
     );
 
-    const today_profit = this.elements.create("p", "today", today+' Today');
+    const today_profit = this.elements.create("p", "today", today + " Today");
     today >= 0
       ? today_profit.classList.add("profit")
       : today_profit.classList.add("loss");
@@ -89,6 +94,5 @@ class SocialCard {
     }
   }
 }
-
 
 export const social_cards = new SocialCard(data.getData().social, elements);

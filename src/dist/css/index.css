@@ -39,6 +39,8 @@
 
 .mode-text {
   color: #696a6a;
+  font-size: 13px;
+  width: 80px;
 }
 
 .mode-icon {
@@ -98,7 +100,11 @@
   background-color: #f9f9f9;
 }
 
-.buttom-paper {
+.bottom-paper {
+  position: absolute;
+  width: 100%;
+  top: 220px;
+  bottom: 0;
   background-color: white;
 }
 
@@ -208,6 +214,7 @@
   gap: 25px;
   height: 100px;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .single-card-overview {
@@ -284,6 +291,9 @@
   .overview-today {
     grid-template-columns: 1fr 1fr;
   }
+  .papers {
+    height: 120vh;
+  }
 }
 @media (max-width: 1000px) {
   .dashboard {
@@ -296,10 +306,16 @@
   .overview-today {
     grid-template-columns: 1fr;
   }
+  .papers {
+    height: 220vh;
+  }
 }
 @media (max-width: 850px) {
   .dashboard {
     padding-inline: 6rem;
+  }
+  .papers {
+    height: 230vh;
   }
 }
 @media (max-width: 700px) {
@@ -330,7 +346,8 @@
     display: inline;
     width: 100%;
     color: black;
-    background-color: #696a6a;
+    background-color: #f9f9f9;
     height: 1px;
+    border-radius: 50%;
   }
 }

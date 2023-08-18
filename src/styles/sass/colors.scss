@@ -8,13 +8,17 @@ $mode-text-color: $text-color;
 $mode-icons-background: white;
 
 $top-paper: #f9f9f9;
-$buttom-paper: white;
+$top-paper-dark: #00001e;
+$bottom-paper: white;
+$bottom-paper-dark: #00001d;
 
 $card-background-color: #f5f5fb;
+$card-background-color-dark: rgb(1, 1, 30);
 $card-background-color-hover: #ededf3;
+$card-background-color-hover-dark: rgb(1, 1, 41);
 
-.primary{
-    color: $text-color;
+.primary {
+  color: $text-color;
 }
 
 .profit {
@@ -23,3 +27,4 @@ $card-background-color-hover: #ededf3;
 .loss {
   color: $loss-color;
 }
+

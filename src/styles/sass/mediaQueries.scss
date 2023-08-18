@@ -16,6 +16,9 @@
   .overview-today {
     grid-template-columns: 1fr 1fr;
   }
+  .papers {
+    height: 120vh;
+  }
 }
 @media (max-width: 1000px) {
   .dashboard {
@@ -28,10 +31,16 @@
   .overview-today {
     grid-template-columns: 1fr;
   }
+  .papers{
+    height: 220vh;
+  }
 }
 @media (max-width: 850px) {
   .dashboard {
     padding-inline: 6rem;
+  }
+  .papers{
+    height: 230vh;
   }
 }
 @media (max-width: 700px) {
@@ -60,11 +69,12 @@
     justify-content: space-between;
     width: 100%;
   }
-  .line{
+  .line {
     display: inline;
     width: 100%;
     color: black;
-    background-color: $text-color;
+    background-color: $top-paper;
     height: 1px;
+    border-radius: 50%;
   }
 }

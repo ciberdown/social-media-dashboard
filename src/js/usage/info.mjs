@@ -5,7 +5,7 @@ class Data {
     twitter: "icon-twitter.svg",
     youtube: "icon-youtube.svg",
   };
-  
+
   getData() {
     return {
       total_followers: 23004,
@@ -16,7 +16,7 @@ class Data {
           followers: 1987,
           unit: "followers",
           today: 12,
-          platform: 'facebook'
+          platform: "facebook",
         },
         {
           icon: this.icons.twitter,
@@ -24,7 +24,7 @@ class Data {
           followers: 1044,
           unit: "followers",
           today: 99,
-          platform: 'twitter'
+          platform: "twitter",
         },
         {
           icon: this.icons.instagram,
@@ -32,7 +32,7 @@ class Data {
           followers: "11K",
           unit: "followers",
           today: 1099,
-          platform: 'instagram'
+          platform: "instagram",
         },
         {
           icon: this.icons.youtube,
@@ -40,7 +40,7 @@ class Data {
           followers: 8239,
           unit: "subscribers",
           today: -144,
-          platform: 'youtube'
+          platform: "youtube",
         },
       ],
       today_overview: [
@@ -83,8 +83,8 @@ class Data {
         {
           title: "Likes",
           icon: this.icons.youtube,
-          number: 507,
-          percentage: 553,
+          number: 107,
+          percentage: -19,
         },
         {
           title: "Total Views",

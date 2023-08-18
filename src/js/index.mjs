@@ -7,8 +7,8 @@ import { overviewCard } from "./overview.mjs";
 function clientSide() {
   data.logData();
   totalFollowers.setTotalFollowers();
-  mode.getSystemMode();
   social_cards.setInfos();
   overviewCard.createCards(data.getData().today_overview);
+  mode.getSystemMode();
 }
 clientSide();
