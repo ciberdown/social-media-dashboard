@@ -1,6 +1,8 @@
+@use "./colors.scss" as colors;
+
 .overview-today-title {
   margin-top: 30px;
-  color: $text-color;
+  color: colors.$text-color;
   font-size: 22px;
 }
 
@@ -18,13 +20,13 @@
   grid-template-columns: 1fr auto;
   gap: 10px;
   row-gap: 15px;
-  background-color: $card-background-color;
+  background-color: colors.$card-background-color;
   border-radius: 5px;
   box-sizing: border-box;
   padding: 20px;
   cursor: pointer;
   &:hover {
-    background-color: $card-background-color-hover;
+    background-color: colors.$card-background-color-hover;
   }
 }
 .overview-title {
@@ -48,4 +50,3 @@
   font-size: 10px;
   font-weight: bold;
 }
-

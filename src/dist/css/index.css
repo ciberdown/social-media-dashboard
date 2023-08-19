@@ -10,18 +10,6 @@
   color: #c23e4e;
 }
 
-.primary {
-  color: #696a6a;
-}
-
-.profit {
-  color: #4cbca1;
-}
-
-.loss {
-  color: #c23e4e;
-}
-
 .modes {
   min-width: 210px;
   display: flex;
@@ -87,6 +75,18 @@
     opacity: 0.2;
   }
 }
+.primary {
+  color: #696a6a;
+}
+
+.profit {
+  color: #4cbca1;
+}
+
+.loss {
+  color: #c23e4e;
+}
+
 .papers {
   position: absolute;
   width: 100%;
@@ -106,6 +106,18 @@
   top: 220px;
   bottom: 0;
   background-color: white;
+}
+
+.primary {
+  color: #696a6a;
+}
+
+.profit {
+  color: #4cbca1;
+}
+
+.loss {
+  color: #c23e4e;
 }
 
 .hidden {
@@ -202,6 +214,18 @@
   margin-bottom: 10px;
 }
 
+.primary {
+  color: #696a6a;
+}
+
+.profit {
+  color: #4cbca1;
+}
+
+.loss {
+  color: #c23e4e;
+}
+
 .overview-today-title {
   margin-top: 30px;
   color: #696a6a;
@@ -270,6 +294,18 @@
 
 .touppercase {
   text-transform: uppercase;
+}
+
+.primary {
+  color: #696a6a;
+}
+
+.profit {
+  color: #4cbca1;
+}
+
+.loss {
+  color: #c23e4e;
 }
 
 .dashboard {

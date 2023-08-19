@@ -1,4 +1,4 @@
-@import "./colors.scss";
+@use "./colors.scss" as colors;
 
 $height: 25px;
 
@@ -9,14 +9,14 @@ $height: 25px;
   gap: 10px;
 }
 .mode-icons {
-  background-color: $mode-icons-background;
+  background-color: colors.$mode-icons-background;
   padding: 2px;
   padding-inline: 6px;
   border-radius: 30%;
   position: relative;
 }
 .mode-text {
-  color: $mode-text-color;
+  color: colors.$mode-text-color;
   font-size: 13px;
   width: 80px;
 }
@@ -42,7 +42,7 @@ $height: 25px;
   width: $height;
   position: absolute;
   z-index: -1;
-  background-color: $mode-icons-background;
+  background-color: colors.$mode-icons-background;
   top: 1px;
 }
 .right-circulate {

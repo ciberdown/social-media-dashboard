@@ -1,3 +1,5 @@
+@use './colors.scss' as colors;
+
 .papers {
   position: absolute;
   width: 100%;
@@ -16,5 +18,5 @@
   width: 100%;
   top: 220px;
   bottom: 0;
-  background-color: $bottom-paper;
+  background-color: colors.$bottom-paper;
 }

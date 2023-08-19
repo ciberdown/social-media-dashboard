@@ -1,3 +1,4 @@
+@use './colors.scss' as colors;
 @import "./grid-system.scss";
 
 .hidden {
@@ -18,7 +19,7 @@
 }
 .single-card-socialmedia {
   gap: 1.2rem;
-  background-color: $card-background-color;
+  background-color: colors.$card-background-color;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +27,7 @@
   overflow: hidden;
   cursor: pointer;
   &:hover {
-    background-color: $card-background-color-hover;
+    background-color: colors.$card-background-color-hover;
   }
 }
 .facebook-gradiant {

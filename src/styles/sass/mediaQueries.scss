@@ -1,3 +1,5 @@
+@use './colors.scss' as colors;
+
 .dashboard {
   padding-inline: 12rem;
   padding-top: 2rem;
@@ -73,7 +75,7 @@
     display: inline;
     width: 100%;
     color: black;
-    background-color: $top-paper;
+    background-color: colors.$top-paper;
     height: 1px;
     border-radius: 50%;
   }
