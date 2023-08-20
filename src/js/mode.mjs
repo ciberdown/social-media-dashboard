@@ -1,12 +1,8 @@
-class Modes {
+export class Modes {
   constructor() {
-    this.darkColors = {
-      top_paper_dark: "#00042B",
-      bottom_paper_dark: "#000435",
-      card_background: "#00053D",
-      card_background_hover: "white",
-    };
     this._currentMode = this.getSystemMode();
+    this.setSystemMode();
+    this.systemModeChangeListener();
   }
   toggleMode() {
     if (this._currentMode === "light") {
@@ -34,58 +30,95 @@ class Modes {
       this.removeDarkClasses();
     }
   }
+  setSystemMode() {
+    this.setMode(this._currentMode);
+  }
+  systemModeChangeListener() {
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (e) => {
+        const colorScheme = e.matches ? "dark" : "light";
+        console.log(colorScheme);
 
+        if (colorScheme === "dark") {
+          this.setMode("dark");
+        } else {
+          this.setMode("light");
+        }
+      });
+  }
   getSystemMode() {
     if (
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
       // System is set to dark mode
-      this.setMode("dark");
       return "dark";
     } else {
       // System is set to light mode
-      this.setMode("light");
       return "light";
     }
   }
   setDarkClasses() {
-    document.querySelector(".top-paper").style.backgroundColor =
-      this.darkColors.top_paper_dark;
-    document.querySelector(".bottom-paper").style.backgroundColor =
-      this.darkColors.bottom_paper_dark;
-    document.querySelector(".main-title").style.color = "white";
+    document.querySelector(".top-paper").classList.add("top-paper-dark");
+    document.querySelector(".bottom-paper").classList.add("bottom-paper-dark");
 
-    const elements = document.querySelectorAll(".single-card-socialmedia");
-    elements.forEach((element) => {
-      element.style.backgroundColor = this.darkColors.card_background;
+    document.querySelector(".main-title").classList.add("white");
+
+    document.querySelectorAll(".single-card-socialmedia").forEach((element) => {
+      element.classList.add("social-card-dark");
+    });
+
+    document.querySelectorAll(".single-card-overview").forEach((element) => {
+      element.classList.add("overview-single-card-dark");
+    });
+
+    document.querySelector(".mode-text").classList.add("mode-text-dark");
+
+    document.querySelectorAll(".mode-background-select").forEach((element) => {
+      element.classList.add("mode-background-dark");
     });
   }
   removeDarkClasses() {
-    document.querySelector(".top-paper").style = "";
-    document.querySelector(".bottom-paper").style = "";
-    document.querySelector(".main-title").style.color = "";
-    const elements = document.querySelectorAll(".single-card-socialmedia");
-    elements.forEach((element) => {
-      element.style.backgroundColor = "";
+    document.querySelector(".top-paper").classList.remove("top-paper-dark");
+    document
+      .querySelector(".bottom-paper")
+      .classList.remove("bottom-paper-dark");
+
+    document.querySelector(".main-title").classList.remove("white");
+
+    document.querySelectorAll(".single-card-socialmedia").forEach((element) => {
+      element.classList.remove("social-card-dark");
+    });
+
+    document.querySelectorAll(".single-card-overview").forEach((element) => {
+      element.classList.remove("overview-single-card-dark");
+    });
+
+    document.querySelector(".mode-text").classList.remove("mode-text-dark");
+
+    document.querySelectorAll(".mode-background-select").forEach((element) => {
+      element.classList.remove("mode-background-dark");
     });
   }
 }
-class ClickModesHandle {
+export class ClickModesHandle {
   constructor(mode) {
     this.mode = mode;
     this.light_mode = document.getElementById("light-mode");
     this.dark_mode = document.getElementById("dark-mode");
-    this.light_mode.addEventListener("click", this.clickLightBtn);
-    this.dark_mode.addEventListener("click", this.clickDarkBtn);
+    this.light_mode.addEventListener("click", () =>
+      this.clickLightBtn(this.mode)
+    );
+    this.dark_mode.addEventListener("click", () =>
+      this.clickDarkBtn(this.mode)
+    );
   }
 
-  clickLightBtn() {
+  clickLightBtn(mode) {
     mode.setMode("light");
   }
-  clickDarkBtn() {
+  clickDarkBtn(mode) {
     mode.setMode("dark");
   }
 }
-export const mode = new Modes();
-export const clickOnModesHandler = new ClickModesHandle(mode);

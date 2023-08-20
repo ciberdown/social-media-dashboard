@@ -6,7 +6,7 @@ class OverviewCard {
     this.direction = "./assets/";
   }
   createCards(data) {
-    const mainElement = document.querySelector(".overview-today");
+    const mainElement = document.querySelector(".overview-today-container");
     data.map((info) => {
       const singleCardElement = this.createSigleCard(info);
       mainElement.appendChild(singleCardElement);
@@ -27,7 +27,7 @@ class OverviewCard {
     platform_img.src = this.direction + icon;
     element.appendChild(platform_img);
 
-    const overview_number = this.elements.create("p", "overview-num", number);
+    const overview_number = this.elements.create("p", "overview-num bold-numbers", number);
     element.appendChild(overview_number);
 
     const section = this.elements.create("section", "overview-percentage-sec");

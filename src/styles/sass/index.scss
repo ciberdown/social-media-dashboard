@@ -1,9 +1,8 @@
-@import "./modes.scss";
-@import "./papers.scss";
-@import "./social_media.scss";
-@import "./overview.scss";
-@import "./grid-system.scss";
-
+@forward "./modes.scss";
+@forward "./papers.scss";
+@forward "./social_media.scss";
+@forward "./overview.scss";
+@forward "./mediaQueries.scss";
 
 .main {
   position: relative;
@@ -25,4 +24,3 @@
 }
 
 
-@import "./mediaQueries.scss";

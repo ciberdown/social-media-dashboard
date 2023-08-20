@@ -1,5 +1,5 @@
 .primary {
-  color: #696a6a;
+  color: #919191;
 }
 
 .profit {
@@ -8,6 +8,14 @@
 
 .loss {
   color: #c23e4e;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
 }
 
 .modes {
@@ -23,16 +31,20 @@
   padding-inline: 6px;
   border-radius: 30%;
   position: relative;
+  cursor: pointer;
 }
 
 .mode-text {
-  color: #696a6a;
+  color: #919191;
   font-size: 13px;
   width: 80px;
 }
 
+.mode-text-dark {
+  color: white;
+}
+
 .mode-icon {
-  cursor: default;
   width: 20px;
   height: 20px;
 }
@@ -53,16 +65,15 @@
 }
 
 .right-circulate {
-  right: -3px;
+  right: -2px;
 }
 
 .left-circulate {
-  left: -3px;
+  left: -2px;
 }
 
 .animate-rotate {
   animation: rotateIcon 0.5s linear forwards alternate;
-  cursor: pointer;
 }
 
 @keyframes rotateIcon {
@@ -75,16 +86,12 @@
     opacity: 0.2;
   }
 }
-.primary {
-  color: #696a6a;
+.mode-background-select {
+  background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 200, 0));
 }
 
-.profit {
-  color: #4cbca1;
-}
-
-.loss {
-  color: #c23e4e;
+.mode-background-dark {
+  background-image: linear-gradient(to right, #00042B, rgb(255, 255, 255));
 }
 
 .papers {
@@ -108,16 +115,12 @@
   background-color: white;
 }
 
-.primary {
-  color: #696a6a;
+.top-paper-dark {
+  background-color: #00042B;
 }
 
-.profit {
-  color: #4cbca1;
-}
-
-.loss {
-  color: #c23e4e;
+.bottom-paper-dark {
+  background-color: #000435;
 }
 
 .hidden {
@@ -156,7 +159,7 @@
   cursor: pointer;
 }
 .single-card-socialmedia:hover {
-  background-color: #ededf3;
+  background-color: white;
 }
 
 .facebook-gradiant {
@@ -214,25 +217,23 @@
   margin-bottom: 10px;
 }
 
-.primary {
-  color: #696a6a;
+.social-card-dark {
+  background-color: #01085c;
 }
-
-.profit {
-  color: #4cbca1;
+.social-card-dark:hover {
+  background-color: rgb(39, 39, 110);
 }
-
-.loss {
-  color: #c23e4e;
+.social-card-dark .bold-numbers {
+  color: white;
 }
 
 .overview-today-title {
   margin-top: 30px;
-  color: #696a6a;
+  color: #919191;
   font-size: 22px;
 }
 
-.overview-today {
+.overview-today-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 25px;
@@ -253,7 +254,7 @@
   cursor: pointer;
 }
 .single-card-overview:hover {
-  background-color: #ededf3;
+  background-color: white;
 }
 
 .overview-title {
@@ -281,31 +282,14 @@
   font-weight: bold;
 }
 
-.main {
-  position: relative;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+.overview-single-card-dark {
+  background-color: #01085c;
 }
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.overview-single-card-dark:hover {
+  background-color: rgb(39, 39, 110);
 }
-
-.touppercase {
-  text-transform: uppercase;
-}
-
-.primary {
-  color: #696a6a;
-}
-
-.profit {
-  color: #4cbca1;
-}
-
-.loss {
-  color: #c23e4e;
+.overview-single-card-dark .bold-numbers {
+  color: white;
 }
 
 .dashboard {
@@ -386,4 +370,18 @@
     height: 1px;
     border-radius: 50%;
   }
+}
+.main {
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.touppercase {
+  text-transform: uppercase;
 }

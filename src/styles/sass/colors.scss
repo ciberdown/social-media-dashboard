@@ -1,4 +1,4 @@
-$text-color: #696a6a;
+$text-color: #919191;
 $folowers-text-color: rgb(165, 165, 165);
 
 $profit-color: #4cbca1;
@@ -6,16 +6,17 @@ $loss-color: #c23e4e;
 
 $mode-text-color: $text-color;
 $mode-icons-background: white;
+$mode-icons-background-dark: #ced2ff;
 
 $top-paper: #f9f9f9;
-$top-paper-dark: #00001e;
+$top-paper-dark: #00042B;
 $bottom-paper: white;
-$bottom-paper-dark: #00001d;
+$bottom-paper-dark: #000435;
 
 $card-background-color: #f5f5fb;
-$card-background-color-dark: rgb(1, 1, 30);
-$card-background-color-hover: #ededf3;
-$card-background-color-hover-dark: rgb(1, 1, 41);
+$card-background-color-dark: #01085c;
+$card-background-color-hover: white;
+$card-background-color-hover-dark: rgb(39, 39, 110);
 
 .primary {
   color: $text-color;
@@ -28,3 +29,9 @@ $card-background-color-hover-dark: rgb(1, 1, 41);
   color: $loss-color;
 }
 
+.white {
+  color: white;
+}
+.black {
+  color: black;
+}

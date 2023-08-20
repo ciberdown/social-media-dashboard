@@ -31,7 +31,7 @@ class SocialCard {
     mainElement.appendChild(social_header);
     const followersElement = this.elements.create(
       "p",
-      "followers-count",
+      "followers-count bold-numbers",
       followers
     );
     mainElement.appendChild(followersElement);

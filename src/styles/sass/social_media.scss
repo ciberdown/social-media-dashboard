@@ -1,5 +1,5 @@
-@use './colors.scss' as colors;
-@import "./grid-system.scss";
+@use "./colors.scss" as colors;
+@use "./grid-system.scss" as grids;
 
 .hidden {
   display: none;
@@ -11,7 +11,7 @@
 }
 
 .social-media-dashboard {
-  @include default-card;
+  @include grids.default-card;
   height: 180px;
 }
 .main-title {
@@ -92,3 +92,12 @@
   margin-bottom: 10px;
 }
 
+.social-card-dark {
+  background-color: colors.$card-background-color-dark;
+  &:hover {
+    background-color: colors.$card-background-color-hover-dark;
+  }
+  .bold-numbers {
+    color: white;
+  }
+}
