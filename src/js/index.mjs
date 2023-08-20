@@ -9,6 +9,7 @@ function clientSide() {
   totalFollowers.setTotalFollowers();
   social_cards.setInfos();
   overviewCard.createCards(data.getData().today_overview);
+  //darkness mode handler
   const mode = new Modes();
   const clickOnModesHandler = new ClickModesHandle(mode);
 }

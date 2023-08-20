@@ -1,5 +1,5 @@
 .primary {
-  color: #919191;
+  color: #696e88;
 }
 
 .profit {
@@ -35,7 +35,7 @@
 }
 
 .mode-text {
-  color: #919191;
+  color: #696e88;
   font-size: 13px;
   width: 80px;
 }
@@ -74,6 +74,11 @@
 
 .animate-rotate {
   animation: rotateIcon 0.5s linear forwards alternate;
+  transition: scale ease-in-out 0.1s, opacity 0.2s;
+}
+.animate-rotate:hover {
+  scale: 1.2;
+  opacity: 1;
 }
 
 @keyframes rotateIcon {
@@ -91,7 +96,7 @@
 }
 
 .mode-background-dark {
-  background-image: linear-gradient(to right, #00042B, rgb(255, 255, 255));
+  background-image: linear-gradient(to right, #00042b, rgb(255, 255, 255));
 }
 
 .papers {
@@ -116,7 +121,7 @@
 }
 
 .top-paper-dark {
-  background-color: #00042B;
+  background-color: #00042b;
 }
 
 .bottom-paper-dark {
@@ -159,7 +164,7 @@
   cursor: pointer;
 }
 .single-card-socialmedia:hover {
-  background-color: white;
+  background-color: #e2e2e7;
 }
 
 .facebook-gradiant {
@@ -229,7 +234,7 @@
 
 .overview-today-title {
   margin-top: 30px;
-  color: #919191;
+  color: #696e88;
   font-size: 22px;
 }
 
@@ -254,7 +259,7 @@
   cursor: pointer;
 }
 .single-card-overview:hover {
-  background-color: white;
+  background-color: #e2e2e7;
 }
 
 .overview-title {
@@ -384,4 +389,8 @@
 
 .touppercase {
   text-transform: uppercase;
+}
+
+.text-color-dark {
+  color: #ced6ff;
 }

@@ -1,6 +1,60 @@
 export class Modes {
   constructor() {
     this._currentMode = this.getSystemMode();
+    this.darknessClassList = {
+      query: [
+        {
+          element: ".top-paper",
+          class: "top-paper-dark",
+        },
+        {
+          element: ".bottom-paper",
+          class: "bottom-paper-dark",
+        },
+        {
+          element: ".main-title",
+          class: "white",
+        },
+        {
+          element: ".mode-text",
+          class: "mode-text-dark",
+        },
+        {
+          element: ".total-followers",
+          class: "text-color-dark",
+        },
+        {
+          element: ".overview-today-title",
+          class: "text-color-dark",
+        },
+      ],
+      queryAll: [
+        {
+          elements: ".single-card-socialmedia",
+          class: "social-card-dark",
+        },
+        {
+          elements: ".single-card-overview",
+          class: "overview-single-card-dark",
+        },
+        {
+          elements: ".mode-background-select",
+          class: "mode-background-dark",
+        },
+        {
+          elements: ".social-id",
+          class: "text-color-dark",
+        },
+        {
+          elements: ".overview-title",
+          class: "text-color-dark",
+        },
+        {
+          elements: ".followers-unit",
+          class: "text-color-dark",
+        },
+      ],
+    };
     this.setSystemMode();
     this.systemModeChangeListener();
   }
@@ -60,45 +114,23 @@ export class Modes {
     }
   }
   setDarkClasses() {
-    document.querySelector(".top-paper").classList.add("top-paper-dark");
-    document.querySelector(".bottom-paper").classList.add("bottom-paper-dark");
-
-    document.querySelector(".main-title").classList.add("white");
-
-    document.querySelectorAll(".single-card-socialmedia").forEach((element) => {
-      element.classList.add("social-card-dark");
+    this.darknessClassList.query.forEach((item) => {
+      document.querySelector(item.element).classList.add(item.class);
     });
-
-    document.querySelectorAll(".single-card-overview").forEach((element) => {
-      element.classList.add("overview-single-card-dark");
-    });
-
-    document.querySelector(".mode-text").classList.add("mode-text-dark");
-
-    document.querySelectorAll(".mode-background-select").forEach((element) => {
-      element.classList.add("mode-background-dark");
+    this.darknessClassList.queryAll.forEach((item) => {
+      document.querySelectorAll(item.elements).forEach((element) => {
+        element.classList.add(item.class);
+      });
     });
   }
   removeDarkClasses() {
-    document.querySelector(".top-paper").classList.remove("top-paper-dark");
-    document
-      .querySelector(".bottom-paper")
-      .classList.remove("bottom-paper-dark");
-
-    document.querySelector(".main-title").classList.remove("white");
-
-    document.querySelectorAll(".single-card-socialmedia").forEach((element) => {
-      element.classList.remove("social-card-dark");
+    this.darknessClassList.query.forEach((item) => {
+      document.querySelector(item.element).classList.remove(item.class);
     });
-
-    document.querySelectorAll(".single-card-overview").forEach((element) => {
-      element.classList.remove("overview-single-card-dark");
-    });
-
-    document.querySelector(".mode-text").classList.remove("mode-text-dark");
-
-    document.querySelectorAll(".mode-background-select").forEach((element) => {
-      element.classList.remove("mode-background-dark");
+    this.darknessClassList.queryAll.forEach((item) => {
+      document.querySelectorAll(item.elements).forEach((element) => {
+        element.classList.remove(item.class);
+      });
     });
   }
 }

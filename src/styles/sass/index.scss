@@ -3,6 +3,7 @@
 @forward "./social_media.scss";
 @forward "./overview.scss";
 @forward "./mediaQueries.scss";
+@use './colors.scss' as colors;
 
 .main {
   position: relative;
@@ -24,3 +25,6 @@
 }
 
 
+.text-color-dark{
+  color: colors.$text-color-dark;
+}
