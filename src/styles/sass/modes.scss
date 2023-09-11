@@ -59,7 +59,7 @@ $height: 25px;
 
 .animate-rotate {
   animation: rotateIcon 0.5s linear forwards alternate;
-  transition: scale ease-in-out 0.1s, opacity .2s;
+  transition: scale ease-in-out 0.1s, opacity 0.2s;
   &:hover {
     scale: 1.2;
     opacity: 1;
@@ -80,7 +80,7 @@ $height: 25px;
   background-image: linear-gradient(
     to left,
     rgb(255, 255, 255),
-    rgb(255, 200, 0)
+    rgb(167, 167, 167)
   );
 }
 .mode-background-dark {

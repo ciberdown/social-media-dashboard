@@ -92,7 +92,7 @@
   }
 }
 .mode-background-select {
-  background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 200, 0));
+  background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(167, 167, 167));
 }
 
 .mode-background-dark {
